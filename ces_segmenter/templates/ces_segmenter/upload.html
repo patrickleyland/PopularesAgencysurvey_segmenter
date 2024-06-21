@@ -1,0 +1,15 @@
+{% extends "ces_segmenter/_base.html" %}
+
+{% block title %}Upload CSV{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1 class="mb-4">Process survey responses</h1>
+  <p>Use this tool to process survey responses and append segments.</p>
+  <form method="post" enctype="multipart/form-data" class="form-group">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Process</button>
+  </form>
+</div>
+{% endblock content %}

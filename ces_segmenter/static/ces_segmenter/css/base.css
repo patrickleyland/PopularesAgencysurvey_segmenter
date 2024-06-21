@@ -1,0 +1,35 @@
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  flex: 1;
+  max-width: 960px;
+  margin-top: 20px; /* Add margin to separate content from the header */
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.footer {
+  margin-top: auto;
+  height: 80px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+  text-align: center;
+}

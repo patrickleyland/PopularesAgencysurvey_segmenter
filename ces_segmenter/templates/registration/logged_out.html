@@ -1,0 +1,10 @@
+{% extends "ces_segmenter/_base.html" %}
+
+{% block title %}Logged Out{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1>Logged Out</h1>
+  <p>You have been logged out successfully. <a href="{% url 'login' %}">Log in again</a></p>
+</div>
+{% endblock content %}

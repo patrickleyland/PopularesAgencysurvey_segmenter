@@ -1,0 +1,10 @@
+{% extends "ces_segmenter/_base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1>Welcome to the Survey Segmenter</h1>
+  <p>This is the home page. You can go to the <a href="{% url 'upload_csv' %}">upload page</a> if you are logged in.</p>
+</div>
+{% endblock content %}
